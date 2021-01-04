@@ -1,10 +1,12 @@
 <div class="">
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+    <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Fixed navbar</a>
+            <a class="navbar-brand" href="/">
+                <img class="logo" src="{{ asset('images/logo.png') }}" alt="{{ __('pickmart') }}">
+            </a>
             <div class="">
                 <div class="input-group">
                     <input type="text" class="form-control">
