@@ -22,6 +22,14 @@ class MerchantController extends Controller
         return redirect()->route('merchant.index');
     }
 
+    public function username()
+    {
+        $loginId = request()->input('login');
+        $fieldType = filter_var($loginId, FILTER_VALIDATE_EMAIL) ? 'email' : 'phone';
+        request()->merge([$fieldType => $loginId]);
+        return $fieldType;
+    }
+
     public function logout(Request $request)
     {
         $this->guard()->logout();
