@@ -91,7 +91,6 @@
     <div class="container">
                 @include('slider')
 
-
                 <section class="service-section mb-4">
                     <div class="col-md-6 col-xl-3">
                         <div class="service-widget">

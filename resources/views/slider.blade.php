@@ -43,7 +43,7 @@
 </div> --}}
 <div class="container">
 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col">
                         <div class="home-slider owl-carousel owl-theme float-left" data-toggle="owl" data-owl-options="{
                             'items' : 1,
                             'margin' : 0,

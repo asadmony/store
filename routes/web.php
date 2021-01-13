@@ -32,6 +32,7 @@ Route::group(['prefix' => 'admin'], function () {
     });
     Route::group(['middleware' => ['admin.auth']], function () {
         Route::view('/', 'admin.home')->name('admin.index');
+        Route::view('/test', 'admin.test')->name('admin.test');
         Route::post('logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('admin.logout');
     });
 });
