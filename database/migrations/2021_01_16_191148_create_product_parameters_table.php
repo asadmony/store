@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAutoCodesTable extends Migration
+class CreateProductParametersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateAutoCodesTable extends Migration
      */
     public function up()
     {
-        Schema::create('auto_codes', function (Blueprint $table) {
+        Schema::create('product_parameters', function (Blueprint $table) {
             $table->id();
-            $table->string('key')->nullable();
-            $table->string('prefix')->nullable();
-            $table->integer('increment')->nullable();
-            $table->bigInteger('number')->nullable();
-            $table->string('suffix')->nullable();
+            $table->bigInteger('product_id')->unsigned()->nullable();
+            $table->string('name')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateAutoCodesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('auto_codes');
+        Schema::dropIfExists('product_parameters');
     }
 }

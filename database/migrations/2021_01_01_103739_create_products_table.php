@@ -15,6 +15,17 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('merchant_id')->unsigned()->nullable();
+            $table->string('code')->nullable();
+            $table->longText('details')->nullable();
+            $table->string('brand')->nullable();
+            $table->string('category')->nullable();
+            $table->integer('quantity')->unsigned()->nullable();
+            $table->integer('price')->unsigned()->nullable();
+            $table->boolean('is_approved')->nullable()->default(false);
+            $table->boolean('is_available')->nullable()->default(true);
+            $table->boolean('is_visible')->nullable()->default(true);
+            $table->boolean('free_delivery')->nullable()->default(false);
             $table->timestamps();
         });
     }
