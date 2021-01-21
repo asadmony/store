@@ -21,7 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('brand')->nullable();
             $table->string('category')->nullable();
             $table->integer('quantity')->unsigned()->nullable();
-            $table->integer('price')->unsigned()->nullable();
+            $table->decimal('price', 10, 2)->nullable()->default(0);
             $table->boolean('is_approved')->nullable()->default(false);
             $table->boolean('is_available')->nullable()->default(true);
             $table->boolean('is_visible')->nullable()->default(true);
