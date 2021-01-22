@@ -44,7 +44,7 @@
         </div>
     </nav>
 </div> --}}
-<div class="header-middle sticky-header" style="background-color: rgb(200, 200, 200)">
+<div class="header-middle sticky-header" style="background-color: rgb(200, 200, 200);">
     <div class="container">
         <div class="header-left">
             <button class="mobile-menu-toggler" type="button">
