@@ -101,7 +101,7 @@
 <section class="product-panel">
     <div class="container">
         <div class="container py-2">
-            <h2>Categories</h2>
+            <h2>Products</h2>
             <div class="row justify-content-center">
                 
                     @include('modules.productCard')
